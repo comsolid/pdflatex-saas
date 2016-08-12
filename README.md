@@ -7,12 +7,11 @@ LaTeX Goes In, PDF is Streamed Out
 ### With Docker
 
 ```shell
-docker build -t latim/pdflatex-as-a-service .
-docker run --port "5050:5050" pdflatex-as-a-service
+docker run --port "5050:5050" comsolid/pdflatex-saas
 ```
 
 ## Run
 
 ```shell
-curl your-docker-host:5050 --data-binary @my.tex > my.pdf
+curl your-docker-machine:5050 --data-binary @my.tex > my.pdf
 ```
