@@ -7,7 +7,7 @@ LaTeX Goes In, PDF is Streamed Out
 ### With Docker
 
 ```shell
-docker run --port "5050:5050" comsolid/pdflatex-saas
+docker run -p "5050:5050" comsolid/pdflatex-saas
 ```
 
 ## Run
