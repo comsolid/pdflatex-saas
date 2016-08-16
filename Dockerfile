@@ -2,6 +2,7 @@ FROM       ubuntu:16.04
 MAINTAINER Átila Camurça <camurca.home@gmail.com>, Samir Coutinho <samirfor@gmail.com>
 
 ENV DEBIAN_FRONTEND "noninteractive"
+ARG INSTALL_EXTRA_PACKAGES
 
 WORKDIR /opt/pdflatex
 
@@ -17,6 +18,7 @@ RUN set -xe && \
         ca-certificates \
         texlive-latex-base \
         texlive-latex-extra \
+        ${INSTALL_EXTRA_PACKAGES} \
     && \
 
     # install nodejs v6
