@@ -26,5 +26,5 @@ You have to build an image like this:
 # build with custom packages
 docker build -t comsolid/pdflatex-saas-extras --build-arg=INSTALL_EXTRA_PACKAGES="texlive-lang-portuguese texlive-generic-recommended texlive-fonts-recommended" .
 # then run
-docker run --port "5050:5050" comsolid/pdflatex-saas-extras
+docker run -p "5050:5050" comsolid/pdflatex-saas-extras
 ```
