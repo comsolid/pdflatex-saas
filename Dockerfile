@@ -23,8 +23,10 @@ RUN set -xe && \
 
 COPY index.js .
 
+# install app files
 RUN npm install
 
+# copy useful files 
 COPY *.cls ./
 COPY *.bst ./
 COPY *.sty ./
